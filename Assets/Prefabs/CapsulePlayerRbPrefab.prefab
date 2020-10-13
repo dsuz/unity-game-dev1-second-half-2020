@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 8564842624782448998}
   - component: {fileID: 8564842624782448999}
   m_Layer: 0
-  m_Name: Capsule
-  m_TagString: Untagged
+  m_Name: CapsulePlayerRbPrefab
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
