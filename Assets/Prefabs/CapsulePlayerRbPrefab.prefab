@@ -130,7 +130,7 @@ MonoBehaviour:
   m_coefficient: 0.95
   m_jumpPower: 5
   m_isGroundedLength: 1.2
-  m_moveInTheAir: 0
+  m_moveInTheAir: 1
   m_fallVelocity: -0.05
 --- !u!1 &8564842625701871500
 GameObject:
