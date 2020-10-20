@@ -87,7 +87,6 @@ public class PlayerControllerRb : MonoBehaviour
     bool IsGrounded()
     {
         // Physics.Linecast() を使って足元から線を張り、そこに何かが衝突していたら true とする
-        CapsuleCollider col = GetComponent<CapsuleCollider>();
         Vector3 start = this.transform.position;   // start: オブジェクトの中心
         Vector3 end = start + Vector3.down * m_isGroundedLength;  // end: start から真下の地点
         Debug.DrawLine(start, end); // 動作確認用に Scene ウィンドウ上で線を表示する
@@ -97,6 +96,6 @@ public class PlayerControllerRb : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.name + " と接触した");
+        Debug.Log(collision.gameObject.name + " と衝突した");
     }
 }
