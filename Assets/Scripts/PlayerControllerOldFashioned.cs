@@ -34,7 +34,7 @@ public class PlayerControllerOldFashioned : MonoBehaviour
         // 左右で回転させる
         if (h != 0)
         {
-            this.transform.Rotate(this.transform.up, h * m_turnSpeed);
+            this.transform.Rotate(this.transform.up, h * m_turnSpeed * Time.deltaTime);
         }
 
         // 上下で前後移動する。ジャンプした時の y 軸方向の速度は保持する。

@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 #*.unitypackage
+
+# Downloaded Assets
+Assets/Kevin Iglesias*
+Assets/Martial Arts Assets Free*

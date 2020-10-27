@@ -10,7 +10,7 @@ using Cinemachine;
 public class CameraSwitcher : MonoBehaviour
 {
     /// <summary>トリガーに接触した時、アクティブになるカメラ</summary>
-    [SerializeField] CinemachineVirtualCameraBase m_camera;
+    [SerializeField] CinemachineVirtualCameraBase m_camera = null;
 
     void OnTriggerEnter(Collider other)
     {
