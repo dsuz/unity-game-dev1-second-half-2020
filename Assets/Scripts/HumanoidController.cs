@@ -17,6 +17,8 @@ public class HumanoidController : MonoBehaviour
     [SerializeField] float m_jumpPower = 5f;
     /// <summary>接地判定の際、中心 (Pivot) からどれくらいの距離を「接地している」と判定するかの長さ</summary>
     [SerializeField] float m_isGroundedLength = 1.1f;
+    /// <summary>攻撃判定のトリガー</summary>
+    [SerializeField] Collider m_attackTrigger = null;
 
     Animator m_anim = null;
     Rigidbody m_rb = null;
@@ -25,6 +27,9 @@ public class HumanoidController : MonoBehaviour
     {
         m_rb = GetComponent<Rigidbody>();
         m_anim = GetComponent<Animator>();
+
+        // 攻撃判定のオブジェクトを非アクティブにする
+        m_attackTrigger.gameObject.SetActive(false);
     }
 
     void Update()
@@ -62,6 +67,13 @@ public class HumanoidController : MonoBehaviour
             m_rb.AddForce(Vector3.up * m_jumpPower, ForceMode.Impulse);
             m_anim.SetTrigger("Jump");
         }
+
+        // 攻撃の入力を取得し、接地している時に押されていたら攻撃する
+        if (Input.GetButtonDown("Fire1") && IsGrounded())
+        {
+            m_anim.SetTrigger("Attack");
+            // TODO: 攻撃中に移動できないようにすると、より自然な動きになる
+        }
     }
 
     /// <summary>
@@ -87,5 +99,27 @@ public class HumanoidController : MonoBehaviour
         Debug.DrawLine(start, end); // 動作確認用に Scene ウィンドウ上で線を表示する
         bool isGrounded = Physics.Linecast(start, end); // 引いたラインに何かがぶつかっていたら true とする
         return isGrounded;
+    }
+
+    /// <summary>
+    /// 攻撃判定を有効にする
+    /// </summary>
+    void BeginAttack()
+    {
+        if (m_attackTrigger)
+        {
+            m_attackTrigger.gameObject.SetActive(true);
+        }
+    }
+
+    /// <summary>
+    /// 攻撃判定を無効にする
+    /// </summary>
+    void EndAttack()
+    {
+        if (m_attackTrigger)
+        {
+            m_attackTrigger.gameObject.SetActive(false);
+        }
     }
 }
