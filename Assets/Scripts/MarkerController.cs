@@ -14,17 +14,20 @@ public class MarkerController : MonoBehaviour
     [SerializeField] GameObject m_marker;
     /// <summary>飛ばした Ray が当たった座標に m_marker を移動する際、Ray が当たった座標からどれくらいずらした場所に移動するかを設定する</summary>
     [SerializeField] Vector3 m_markerOffset = Vector3.up * 0.01f;
+    /// <summary>この Layer に所属したオブジェクトにのみ Ray が当たる</summary>
+    [SerializeField] LayerMask m_layerMask = ~0;
 
     void Update()
     {
         // クリックで Ray を飛ばす
-        if(Input.GetButtonDown("Fire1"))
+        //if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             // カメラの位置 → マウスでクリックした場所に Ray を飛ばすように設定する
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit; // out パラメータで Ray の衝突情報を受け取るための変数
             // Ray を飛ばして、コライダーに当たったかどうかを戻り値で受け取る
-            bool isHit = Physics.Raycast(ray, out hit); // オーバーライドがたくさんあることに注意すること
+            bool isHit = Physics.Raycast(ray, out hit, m_debugRayLength, m_layerMask); // オーバーライドがたくさんあることに注意すること
 
             // Ray が当たったかどうかで異なる処理をする
             if (isHit)
