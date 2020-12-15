@@ -1459,9 +1459,10 @@ GameObject:
   - component: {fileID: 2209905604023698567}
   - component: {fileID: 2209905604023698561}
   - component: {fileID: 2209905604023698562}
+  - component: {fileID: 1359138266380482453}
   - component: {fileID: 2209905604023698566}
   m_Layer: 0
-  m_Name: Player
+  m_Name: SampleHumanoidPlayerPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1531,6 +1532,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1359138266380482453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210663776446032468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9106f30d40e436b4fa94435ae58bbb38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_particles:
+  - {fileID: 0}
 --- !u!114 &2209905604023698566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1547,6 +1562,7 @@ MonoBehaviour:
   m_turnSpeed: 3
   m_jumpPower: 5
   m_isGroundedLength: 0.1
+  m_attackTrigger: {fileID: 0}
 --- !u!1 &2210678038527737296
 GameObject:
   m_ObjectHideFlags: 0
