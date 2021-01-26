@@ -789,7 +789,6 @@ GameObject:
   - component: {fileID: 3333830095377801124}
   - component: {fileID: 3333830095377801123}
   - component: {fileID: 59912445}
-  - component: {fileID: 59912437}
   - component: {fileID: 8431928724481798063}
   m_Layer: 0
   m_Name: MessageBoard
@@ -1600,18 +1599,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &59912437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3333830095377801131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b530fa0bca8d366429b36cb3a1af1718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &8431928724481798063
 BoxCollider:
   m_ObjectHideFlags: 0

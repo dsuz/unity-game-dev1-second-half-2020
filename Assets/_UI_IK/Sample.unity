@@ -121,6 +121,24 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &59912436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3333830095377801131, guid: eddabe2a45441ed428d4d0c921f5fe2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3333830095420927839}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &59912437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59912436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b530fa0bca8d366429b36cb3a1af1718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &82409963
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +862,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh63104
+  m_Name: pb_Mesh78488
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2749,7 +2767,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.2476008, y: 1}
+    m_SensorSize: {x: 1.2377359, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2765,7 +2783,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792981244}
-  m_LocalRotation: {x: 0.08279129, y: -0.000000030614068, z: 0.0000000025433096, w: 0.99656695}
+  m_LocalRotation: {x: 0.08279129, y: 0.000000030614068, z: -0.0000000025433096, w: 0.99656695}
   m_LocalPosition: {x: 0, y: 2.4, z: -5.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2880,7 +2898,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1848342357}
-  m_LocalRotation: {x: 0.08279129, y: -0.000000030614068, z: 0.0000000025433096, w: 0.99656695}
+  m_LocalRotation: {x: 0.08279129, y: 0.000000030614068, z: -0.0000000025433096, w: 0.99656695}
   m_LocalPosition: {x: 0, y: 2.4, z: -5.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -3026,7 +3044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh63064
+  m_Name: pb_Mesh78448
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3189,7 +3207,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh63024
+  m_Name: pb_Mesh78422
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3437,6 +3455,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1607949188}
+    - target: {fileID: 3333830093622939454, guid: eddabe2a45441ed428d4d0c921f5fe2c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3333830095377801125, guid: eddabe2a45441ed428d4d0c921f5fe2c,
         type: 3}
       propertyPath: m_textString
@@ -3547,15 +3570,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1540789875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.08279129
+      value: 0.082791306
       objectReference: {fileID: 0}
     - target: {fileID: 1540789875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000030614068
+      value: -1.1810774e-15
       objectReference: {fileID: 0}
     - target: {fileID: 1540789875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000025433096
+      value: -7.158488e-17
       objectReference: {fileID: 0}
     - target: {fileID: 1932823874, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: near clip plane
@@ -3583,11 +3606,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1932823875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000030614068
+      value: 0.000000030614068
       objectReference: {fileID: 0}
     - target: {fileID: 1932823875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000025433096
+      value: -0.0000000025433096
       objectReference: {fileID: 0}
     - target: {fileID: 1932823875, guid: 35ec5ba5453d3d941929587cbc895df3, type: 3}
       propertyPath: m_LocalRotation.w

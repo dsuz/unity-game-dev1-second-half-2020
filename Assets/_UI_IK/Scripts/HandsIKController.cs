@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// 両手の IK を制御する。トリガーをオブジェクトに追加し、トリガーに接触すると両手の IK がアクティブになる。
