@@ -47,8 +47,11 @@ public class EnemyNinjaController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // トリガーに当たったら破棄する
-        Destroy(this.gameObject);
+        // 手裏剣に当たったら破棄する
+        if (other.CompareTag("ShurikenTag"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void OnDestroy()

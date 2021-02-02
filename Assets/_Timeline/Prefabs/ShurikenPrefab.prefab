@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -1827872602359402586}
   m_Layer: 0
   m_Name: ShurikenPrefab
-  m_TagString: Untagged
+  m_TagString: ShurikenTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,7 +468,6 @@ MonoBehaviour:
     m_AreaError: 15
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
-  m_Mesh: {fileID: 0}
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []

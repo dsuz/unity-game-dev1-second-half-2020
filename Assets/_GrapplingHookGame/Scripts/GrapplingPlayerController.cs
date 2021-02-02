@@ -25,6 +25,8 @@ public class GrapplingPlayerController : MonoBehaviour
     [SerializeField] float m_jumpPower = 5f;
     /// <summary>接地判定の際、中心 (Pivot) からどれくらいの距離を「接地している」と判定するかの長さ</summary>
     [SerializeField] float m_isGroundedLength = 0.1f;
+    /// <summary>接地判定の Pivot をオブジェクトの Pivot からどれくらいずらすかを設定する</summary>
+    [SerializeField] Vector3 m_isGroundedPivotOffset = Vector3.zero;
     /// <summary>攻撃判定のトリガー</summary>
     [SerializeField] Collider m_attackTrigger = null;
 
@@ -123,7 +125,7 @@ public class GrapplingPlayerController : MonoBehaviour
     bool IsGrounded()
     {
         // Physics.Linecast() を使って足元から線を張り、そこに何かが衝突していたら true とする
-        Vector3 start = this.transform.position;   // start: オブジェクトの中心
+        Vector3 start = this.transform.position + m_isGroundedPivotOffset;   // start: 当たり判定のスタート地点
         Vector3 end = start + Vector3.down * m_isGroundedLength;  // end: start から真下の地点
         Debug.DrawLine(start, end); // 動作確認用に Scene ウィンドウ上で線を表示する
         bool isGrounded = Physics.Linecast(start, end); // 引いたラインに何かがぶつかっていたら true とする

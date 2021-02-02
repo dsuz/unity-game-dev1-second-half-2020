@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Demogame Urban Ninja/Scenes/Title.unity
+    guid: 7f0b176151c01ec45b4e6c4dc688abb4
+  - enabled: 1
+    path: Assets/_Demogame Urban Ninja/Scenes/GameScene.unity
+    guid: 5e44d5ec84ab610419aceac2bc2ef8f5
+  - enabled: 1
+    path: Assets/_Demogame Urban Ninja/Scenes/Clear.unity
+    guid: fdad080b11410dd4bbe736f489cd2739
   m_configObjects: {}
